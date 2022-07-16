@@ -1,0 +1,950 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18AB647E226F42A500827E1B /* iValtRegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AB647D226F42A500827E1B /* iValtRegistrationViewController.swift */; };
+		18AB6481226F42CE00827E1B /* iValtOtpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AB6480226F42CE00827E1B /* iValtOtpViewController.swift */; };
+		18AB6488226F432100827E1B /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AB6487226F432100827E1B /* AppConstants.swift */; };
+		18AB64D8226F4AD800827E1B /* ViewControllerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AB64D7226F4AD800827E1B /* ViewControllerHelper.swift */; };
+		18AB64DB226F4B9D00827E1B /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AB64DA226F4B9D00827E1B /* Helper.swift */; };
+		18AB64DE226F4BE800827E1B /* UserDefaultsConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AB64DD226F4BE800827E1B /* UserDefaultsConstants.swift */; };
+		18AB64E3226F4C5B00827E1B /* WSConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AB64E2226F4C5B00827E1B /* WSConstants.swift */; };
+		18AB64E5226F4C6900827E1B /* WSManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AB64E4226F4C6900827E1B /* WSManager.swift */; };
+		190AEA6E234489EA003363DD /* UIButton + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190AEA6D234489EA003363DD /* UIButton + Extension.swift */; };
+		190AEA7123448A4A003363DD /* UIView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190AEA7023448A4A003363DD /* UIView + Extension.swift */; };
+		1918D229234490530083112D /* AlertMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1918D228234490530083112D /* AlertMessages.swift */; };
+		19428D7D232E4D1100E6565C /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19428D7C232E4D1100E6565C /* Extension.swift */; };
+		196E2B2123CF41AA00F95D01 /* iValtRegistrationCompletedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196E2B2023CF41AA00F95D01 /* iValtRegistrationCompletedViewController.swift */; };
+		1982580024211384009499F6 /* iValtMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198257FF24211384009499F6 /* iValtMainViewController.swift */; };
+		1988BEEF26562C35006065CC /* PushNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1988BEEE26562C35006065CC /* PushNotification.swift */; };
+		1988FB78266632220041893C /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1988FB77266632220041893C /* KeychainWrapper.swift */; };
+		198BA1702633DBB600BDDA0A /* iValtLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198BA16F2633DBB600BDDA0A /* iValtLoginViewController.swift */; };
+		199702602699CDE800190C9B /* CheckBiometricStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1997025F2699CDE800190C9B /* CheckBiometricStatus.swift */; };
+		19C691BE26785BFA00B1F5FF /* DeleteUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C691BD26785BFA00B1F5FF /* DeleteUser.swift */; };
+		19EBE01A2721452800BD307F /* Rubik-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 19EBE0182721452800BD307F /* Rubik-Medium.ttf */; };
+		19EBE01B2721452800BD307F /* Rubik-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 19EBE0192721452800BD307F /* Rubik-Regular.ttf */; };
+		4D5C4A89225DCB210088E3A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5C4A88225DCB210088E3A4 /* AppDelegate.swift */; };
+		4D5C4A8E225DCB210088E3A4 /* iValt.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D5C4A8C225DCB210088E3A4 /* iValt.storyboard */; };
+		4D5C4A90225DCB290088E3A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D5C4A8F225DCB290088E3A4 /* Assets.xcassets */; };
+		4D5C4A93225DCB290088E3A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D5C4A91225DCB290088E3A4 /* LaunchScreen.storyboard */; };
+		4D5C4A9E225DCB290088E3A4 /* iValutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5C4A9D225DCB290088E3A4 /* iValutTests.swift */; };
+		4D5C4AA9225DCB290088E3A4 /* iValutUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5C4AA8225DCB290088E3A4 /* iValutUITests.swift */; };
+		624E606DD912B572E1D9059D /* Pods_iValt_iValtUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CA447117EBE2A436360233F /* Pods_iValt_iValtUITests.framework */; };
+		6388FDA766EE528BB0C166ED /* Pods_iValtTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDEC3C9DDF157F1F4C72FB44 /* Pods_iValtTests.framework */; };
+		8BCA42F4273A923D002BC5BD /* CountryCodes.json in Resources */ = {isa = PBXBuildFile; fileRef = 8BCA42F3273A923D002BC5BD /* CountryCodes.json */; };
+		AD4A290B8DD01DF33D2BF0D0 /* Pods_iValt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F3121D410D5F406EB4F08DB /* Pods_iValt.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4D5C4A9A225DCB290088E3A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4D5C4A7D225DCB210088E3A4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D5C4A84225DCB210088E3A4;
+			remoteInfo = iValut;
+		};
+		4D5C4AA5225DCB290088E3A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4D5C4A7D225DCB210088E3A4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D5C4A84225DCB210088E3A4;
+			remoteInfo = iValut;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		19412E322384DD00006FA798 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		18AB647D226F42A500827E1B /* iValtRegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iValtRegistrationViewController.swift; sourceTree = "<group>"; };
+		18AB6480226F42CE00827E1B /* iValtOtpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iValtOtpViewController.swift; sourceTree = "<group>"; };
+		18AB6487226F432100827E1B /* AppConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		18AB64D7226F4AD800827E1B /* ViewControllerHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerHelper.swift; sourceTree = "<group>"; };
+		18AB64DA226F4B9D00827E1B /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		18AB64DD226F4BE800827E1B /* UserDefaultsConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsConstants.swift; sourceTree = "<group>"; };
+		18AB64E2226F4C5B00827E1B /* WSConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WSConstants.swift; sourceTree = "<group>"; };
+		18AB64E4226F4C6900827E1B /* WSManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WSManager.swift; sourceTree = "<group>"; };
+		190AEA6D234489EA003363DD /* UIButton + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton + Extension.swift"; sourceTree = "<group>"; };
+		190AEA7023448A4A003363DD /* UIView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "\U0010UIView + Extension.swift"; sourceTree = "<group>"; };
+		1918D228234490530083112D /* AlertMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertMessages.swift; sourceTree = "<group>"; };
+		19428D7C232E4D1100E6565C /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		196E2B2023CF41AA00F95D01 /* iValtRegistrationCompletedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iValtRegistrationCompletedViewController.swift; sourceTree = "<group>"; };
+		198257FF24211384009499F6 /* iValtMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iValtMainViewController.swift; sourceTree = "<group>"; };
+		1988BEEE26562C35006065CC /* PushNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotification.swift; sourceTree = "<group>"; };
+		1988FB77266632220041893C /* KeychainWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainWrapper.swift; sourceTree = "<group>"; };
+		198BA16F2633DBB600BDDA0A /* iValtLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iValtLoginViewController.swift; sourceTree = "<group>"; };
+		1997025F2699CDE800190C9B /* CheckBiometricStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBiometricStatus.swift; sourceTree = "<group>"; };
+		19C691BD26785BFA00B1F5FF /* DeleteUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteUser.swift; sourceTree = "<group>"; };
+		19EBE0182721452800BD307F /* Rubik-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Medium.ttf"; sourceTree = "<group>"; };
+		19EBE0192721452800BD307F /* Rubik-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Regular.ttf"; sourceTree = "<group>"; };
+		21FAFFF6BC75A5F3D3FEC6CF /* Pods-iValtTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iValtTests.debug.xcconfig"; path = "Target Support Files/Pods-iValtTests/Pods-iValtTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2CA447117EBE2A436360233F /* Pods_iValt_iValtUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iValt_iValtUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4116F18F364FC72FCE8BE966 /* Pods-iValtTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iValtTests.release.xcconfig"; path = "Target Support Files/Pods-iValtTests/Pods-iValtTests.release.xcconfig"; sourceTree = "<group>"; };
+		4D5C4A85225DCB210088E3A4 /* iValt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iValt.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D5C4A88225DCB210088E3A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4D5C4A8D225DCB210088E3A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/iValt.storyboard; sourceTree = "<group>"; };
+		4D5C4A8F225DCB290088E3A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4D5C4A92225DCB290088E3A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4D5C4A94225DCB290088E3A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D5C4A99225DCB290088E3A4 /* iValtTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iValtTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D5C4A9D225DCB290088E3A4 /* iValutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iValutTests.swift; sourceTree = "<group>"; };
+		4D5C4A9F225DCB290088E3A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D5C4AA4225DCB290088E3A4 /* iValtUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iValtUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D5C4AA8225DCB290088E3A4 /* iValutUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iValutUITests.swift; sourceTree = "<group>"; };
+		4D5C4AAA225DCB290088E3A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77D956073970808C8CD1E03A /* Pods-iValt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iValt.debug.xcconfig"; path = "Target Support Files/Pods-iValt/Pods-iValt.debug.xcconfig"; sourceTree = "<group>"; };
+		8BCA42F3273A923D002BC5BD /* CountryCodes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CountryCodes.json; sourceTree = "<group>"; };
+		8F3121D410D5F406EB4F08DB /* Pods_iValt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iValt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABE12E69A9EF385CE09E7048 /* Pods-iValt-iValtUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iValt-iValtUITests.debug.xcconfig"; path = "Target Support Files/Pods-iValt-iValtUITests/Pods-iValt-iValtUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AFE7516864E5375499C3B56B /* Pods-iValt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iValt.release.xcconfig"; path = "Target Support Files/Pods-iValt/Pods-iValt.release.xcconfig"; sourceTree = "<group>"; };
+		BDEC3C9DDF157F1F4C72FB44 /* Pods_iValtTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iValtTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAABF2F0E84535C2BEA029E1 /* Pods-iValt-iValtUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iValt-iValtUITests.release.xcconfig"; path = "Target Support Files/Pods-iValt-iValtUITests/Pods-iValt-iValtUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4D5C4A82225DCB210088E3A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD4A290B8DD01DF33D2BF0D0 /* Pods_iValt.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D5C4A96225DCB290088E3A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6388FDA766EE528BB0C166ED /* Pods_iValtTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D5C4AA1225DCB290088E3A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				624E606DD912B572E1D9059D /* Pods_iValt_iValtUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05694D26C58EEE19FC4831D1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8F3121D410D5F406EB4F08DB /* Pods_iValt.framework */,
+				2CA447117EBE2A436360233F /* Pods_iValt_iValtUITests.framework */,
+				BDEC3C9DDF157F1F4C72FB44 /* Pods_iValtTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		18AB6478226F422B00827E1B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				198BA16F2633DBB600BDDA0A /* iValtLoginViewController.swift */,
+				198257FF24211384009499F6 /* iValtMainViewController.swift */,
+				18AB6480226F42CE00827E1B /* iValtOtpViewController.swift */,
+				196E2B2023CF41AA00F95D01 /* iValtRegistrationCompletedViewController.swift */,
+				18AB647D226F42A500827E1B /* iValtRegistrationViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		18AB6479226F423E00827E1B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8BCA42F3273A923D002BC5BD /* CountryCodes.json */,
+				198C007F2560EB7400B4ACB8 /* Fonts */,
+				18AB64DF226F4BFD00827E1B /* Utils */,
+				4D5C4A8F225DCB290088E3A4 /* Assets.xcassets */,
+				4D5C4A94225DCB290088E3A4 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		18AB647A226F425000827E1B /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				4D5C4A8C225DCB210088E3A4 /* iValt.storyboard */,
+				4D5C4A91225DCB290088E3A4 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		18AB647B226F426100827E1B /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				4D5C4A88225DCB210088E3A4 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		18AB6485226F42F100827E1B /* OtherClasses */ = {
+			isa = PBXGroup;
+			children = (
+				1918D228234490530083112D /* AlertMessages.swift */,
+				18AB6487226F432100827E1B /* AppConstants.swift */,
+				1997025F2699CDE800190C9B /* CheckBiometricStatus.swift */,
+				19C691BD26785BFA00B1F5FF /* DeleteUser.swift */,
+				19428D7C232E4D1100E6565C /* Extension.swift */,
+				18AB64DA226F4B9D00827E1B /* Helper.swift */,
+				190AEA6D234489EA003363DD /* UIButton + Extension.swift */,
+				190AEA7023448A4A003363DD /* UIView + Extension.swift */,
+				18AB64DD226F4BE800827E1B /* UserDefaultsConstants.swift */,
+				18AB64D7226F4AD800827E1B /* ViewControllerHelper.swift */,
+				1988BEEE26562C35006065CC /* PushNotification.swift */,
+				1988FB77266632220041893C /* KeychainWrapper.swift */,
+			);
+			path = OtherClasses;
+			sourceTree = "<group>";
+		};
+		18AB64DF226F4BFD00827E1B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				18AB64E1226F4C3F00827E1B /* WSManager */,
+				18AB64E0226F4C2D00827E1B /* WSConstants */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		18AB64E0226F4C2D00827E1B /* WSConstants */ = {
+			isa = PBXGroup;
+			children = (
+				18AB64E2226F4C5B00827E1B /* WSConstants.swift */,
+			);
+			path = WSConstants;
+			sourceTree = "<group>";
+		};
+		18AB64E1226F4C3F00827E1B /* WSManager */ = {
+			isa = PBXGroup;
+			children = (
+				18AB64E4226F4C6900827E1B /* WSManager.swift */,
+			);
+			path = WSManager;
+			sourceTree = "<group>";
+		};
+		198C007F2560EB7400B4ACB8 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				19EBE0182721452800BD307F /* Rubik-Medium.ttf */,
+				19EBE0192721452800BD307F /* Rubik-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		39C678EEB51FAF1D3C4AEB1A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				77D956073970808C8CD1E03A /* Pods-iValt.debug.xcconfig */,
+				AFE7516864E5375499C3B56B /* Pods-iValt.release.xcconfig */,
+				ABE12E69A9EF385CE09E7048 /* Pods-iValt-iValtUITests.debug.xcconfig */,
+				EAABF2F0E84535C2BEA029E1 /* Pods-iValt-iValtUITests.release.xcconfig */,
+				21FAFFF6BC75A5F3D3FEC6CF /* Pods-iValtTests.debug.xcconfig */,
+				4116F18F364FC72FCE8BE966 /* Pods-iValtTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		4D5C4A7C225DCB210088E3A4 = {
+			isa = PBXGroup;
+			children = (
+				4D5C4A87225DCB210088E3A4 /* iValut */,
+				4D5C4A9C225DCB290088E3A4 /* iValutTests */,
+				4D5C4AA7225DCB290088E3A4 /* iValutUITests */,
+				4D5C4A86225DCB210088E3A4 /* Products */,
+				05694D26C58EEE19FC4831D1 /* Frameworks */,
+				39C678EEB51FAF1D3C4AEB1A /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		4D5C4A86225DCB210088E3A4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4D5C4A85225DCB210088E3A4 /* iValt.app */,
+				4D5C4A99225DCB290088E3A4 /* iValtTests.xctest */,
+				4D5C4AA4225DCB290088E3A4 /* iValtUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4D5C4A87225DCB210088E3A4 /* iValut */ = {
+			isa = PBXGroup;
+			children = (
+				18AB6485226F42F100827E1B /* OtherClasses */,
+				18AB647B226F426100827E1B /* AppDelegate */,
+				18AB6478226F422B00827E1B /* ViewControllers */,
+				18AB647A226F425000827E1B /* Storyboards */,
+				18AB6479226F423E00827E1B /* Supporting Files */,
+			);
+			path = iValut;
+			sourceTree = "<group>";
+		};
+		4D5C4A9C225DCB290088E3A4 /* iValutTests */ = {
+			isa = PBXGroup;
+			children = (
+				4D5C4A9D225DCB290088E3A4 /* iValutTests.swift */,
+				4D5C4A9F225DCB290088E3A4 /* Info.plist */,
+			);
+			path = iValutTests;
+			sourceTree = "<group>";
+		};
+		4D5C4AA7225DCB290088E3A4 /* iValutUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4D5C4AA8225DCB290088E3A4 /* iValutUITests.swift */,
+				4D5C4AAA225DCB290088E3A4 /* Info.plist */,
+			);
+			path = iValutUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4D5C4A84225DCB210088E3A4 /* iValt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D5C4AAD225DCB290088E3A4 /* Build configuration list for PBXNativeTarget "iValt" */;
+			buildPhases = (
+				EE6873E206A20899FCD3EE56 /* [CP] Check Pods Manifest.lock */,
+				4D5C4A81225DCB210088E3A4 /* Sources */,
+				4D5C4A82225DCB210088E3A4 /* Frameworks */,
+				4D5C4A83225DCB210088E3A4 /* Resources */,
+				19412E322384DD00006FA798 /* Embed Frameworks */,
+				C31207930F5B17E1FD8D363B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iValt;
+			productName = iValut;
+			productReference = 4D5C4A85225DCB210088E3A4 /* iValt.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4D5C4A98225DCB290088E3A4 /* iValtTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D5C4AB0225DCB290088E3A4 /* Build configuration list for PBXNativeTarget "iValtTests" */;
+			buildPhases = (
+				13FED51AD7545B081ABFBCFE /* [CP] Check Pods Manifest.lock */,
+				4D5C4A95225DCB290088E3A4 /* Sources */,
+				4D5C4A96225DCB290088E3A4 /* Frameworks */,
+				4D5C4A97225DCB290088E3A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4D5C4A9B225DCB290088E3A4 /* PBXTargetDependency */,
+			);
+			name = iValtTests;
+			productName = iValutTests;
+			productReference = 4D5C4A99225DCB290088E3A4 /* iValtTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4D5C4AA3225DCB290088E3A4 /* iValtUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D5C4AB3225DCB290088E3A4 /* Build configuration list for PBXNativeTarget "iValtUITests" */;
+			buildPhases = (
+				18C4F0BD5C04E1F841BB368E /* [CP] Check Pods Manifest.lock */,
+				4D5C4AA0225DCB290088E3A4 /* Sources */,
+				4D5C4AA1225DCB290088E3A4 /* Frameworks */,
+				4D5C4AA2225DCB290088E3A4 /* Resources */,
+				4372A61005D78CCFCF3E3B64 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4D5C4AA6225DCB290088E3A4 /* PBXTargetDependency */,
+			);
+			name = iValtUITests;
+			productName = iValutUITests;
+			productReference = 4D5C4AA4225DCB290088E3A4 /* iValtUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4D5C4A7D225DCB210088E3A4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1200;
+				ORGANIZATIONNAME = "MAC Book Air";
+				TargetAttributes = {
+					4D5C4A84225DCB210088E3A4 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1100;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					4D5C4A98225DCB290088E3A4 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1100;
+						TestTargetID = 4D5C4A84225DCB210088E3A4;
+					};
+					4D5C4AA3225DCB290088E3A4 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1100;
+						TestTargetID = 4D5C4A84225DCB210088E3A4;
+					};
+				};
+			};
+			buildConfigurationList = 4D5C4A80225DCB210088E3A4 /* Build configuration list for PBXProject "iValt" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4D5C4A7C225DCB210088E3A4;
+			productRefGroup = 4D5C4A86225DCB210088E3A4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4D5C4A84225DCB210088E3A4 /* iValt */,
+				4D5C4A98225DCB290088E3A4 /* iValtTests */,
+				4D5C4AA3225DCB290088E3A4 /* iValtUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4D5C4A83225DCB210088E3A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D5C4A93225DCB290088E3A4 /* LaunchScreen.storyboard in Resources */,
+				4D5C4A90225DCB290088E3A4 /* Assets.xcassets in Resources */,
+				4D5C4A8E225DCB210088E3A4 /* iValt.storyboard in Resources */,
+				8BCA42F4273A923D002BC5BD /* CountryCodes.json in Resources */,
+				19EBE01B2721452800BD307F /* Rubik-Regular.ttf in Resources */,
+				19EBE01A2721452800BD307F /* Rubik-Medium.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D5C4A97225DCB290088E3A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D5C4AA2225DCB290088E3A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		13FED51AD7545B081ABFBCFE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iValtTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		18C4F0BD5C04E1F841BB368E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iValt-iValtUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4372A61005D78CCFCF3E3B64 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iValt-iValtUITests/Pods-iValt-iValtUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iValt-iValtUITests/Pods-iValt-iValtUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iValt-iValtUITests/Pods-iValt-iValtUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C31207930F5B17E1FD8D363B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iValt/Pods-iValt-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iValt/Pods-iValt-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iValt/Pods-iValt-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE6873E206A20899FCD3EE56 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iValt-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4D5C4A81225DCB210088E3A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19428D7D232E4D1100E6565C /* Extension.swift in Sources */,
+				18AB64DE226F4BE800827E1B /* UserDefaultsConstants.swift in Sources */,
+				196E2B2123CF41AA00F95D01 /* iValtRegistrationCompletedViewController.swift in Sources */,
+				18AB647E226F42A500827E1B /* iValtRegistrationViewController.swift in Sources */,
+				1918D229234490530083112D /* AlertMessages.swift in Sources */,
+				18AB64E5226F4C6900827E1B /* WSManager.swift in Sources */,
+				18AB64D8226F4AD800827E1B /* ViewControllerHelper.swift in Sources */,
+				190AEA6E234489EA003363DD /* UIButton + Extension.swift in Sources */,
+				18AB6481226F42CE00827E1B /* iValtOtpViewController.swift in Sources */,
+				199702602699CDE800190C9B /* CheckBiometricStatus.swift in Sources */,
+				1988FB78266632220041893C /* KeychainWrapper.swift in Sources */,
+				19C691BE26785BFA00B1F5FF /* DeleteUser.swift in Sources */,
+				18AB6488226F432100827E1B /* AppConstants.swift in Sources */,
+				4D5C4A89225DCB210088E3A4 /* AppDelegate.swift in Sources */,
+				18AB64E3226F4C5B00827E1B /* WSConstants.swift in Sources */,
+				198BA1702633DBB600BDDA0A /* iValtLoginViewController.swift in Sources */,
+				190AEA7123448A4A003363DD /* UIView + Extension.swift in Sources */,
+				1988BEEF26562C35006065CC /* PushNotification.swift in Sources */,
+				1982580024211384009499F6 /* iValtMainViewController.swift in Sources */,
+				18AB64DB226F4B9D00827E1B /* Helper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D5C4A95225DCB290088E3A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D5C4A9E225DCB290088E3A4 /* iValutTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D5C4AA0225DCB290088E3A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D5C4AA9225DCB290088E3A4 /* iValutUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4D5C4A9B225DCB290088E3A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4D5C4A84225DCB210088E3A4 /* iValt */;
+			targetProxy = 4D5C4A9A225DCB290088E3A4 /* PBXContainerItemProxy */;
+		};
+		4D5C4AA6225DCB290088E3A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4D5C4A84225DCB210088E3A4 /* iValt */;
+			targetProxy = 4D5C4AA5225DCB290088E3A4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4D5C4A8C225DCB210088E3A4 /* iValt.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4D5C4A8D225DCB210088E3A4 /* Base */,
+			);
+			name = iValt.storyboard;
+			sourceTree = "<group>";
+		};
+		4D5C4A91225DCB290088E3A4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4D5C4A92225DCB290088E3A4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4D5C4AAB225DCB290088E3A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4D5C4AAC225DCB290088E3A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4D5C4AAE225DCB290088E3A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77D956073970808C8CD1E03A /* Pods-iValt.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RWAGAT2T5S;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/iValut/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iValt.iOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = NO;
+			};
+			name = Debug;
+		};
+		4D5C4AAF225DCB290088E3A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFE7516864E5375499C3B56B /* Pods-iValt.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RWAGAT2T5S;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/iValut/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iValt.iOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = NO;
+			};
+			name = Release;
+		};
+		4D5C4AB1225DCB290088E3A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21FAFFF6BC75A5F3D3FEC6CF /* Pods-iValtTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 63UZA2YPYP;
+				INFOPLIST_FILE = iValutTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = team.iValutTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iValt.app/iValt";
+			};
+			name = Debug;
+		};
+		4D5C4AB2225DCB290088E3A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4116F18F364FC72FCE8BE966 /* Pods-iValtTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 63UZA2YPYP;
+				INFOPLIST_FILE = iValutTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = team.iValutTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iValt.app/iValt";
+			};
+			name = Release;
+		};
+		4D5C4AB4225DCB290088E3A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABE12E69A9EF385CE09E7048 /* Pods-iValt-iValtUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 63UZA2YPYP;
+				INFOPLIST_FILE = iValutUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = team.iValutUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = iValut;
+			};
+			name = Debug;
+		};
+		4D5C4AB5225DCB290088E3A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAABF2F0E84535C2BEA029E1 /* Pods-iValt-iValtUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 63UZA2YPYP;
+				INFOPLIST_FILE = iValutUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = team.iValutUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = iValut;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4D5C4A80225DCB210088E3A4 /* Build configuration list for PBXProject "iValt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D5C4AAB225DCB290088E3A4 /* Debug */,
+				4D5C4AAC225DCB290088E3A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D5C4AAD225DCB290088E3A4 /* Build configuration list for PBXNativeTarget "iValt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D5C4AAE225DCB290088E3A4 /* Debug */,
+				4D5C4AAF225DCB290088E3A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D5C4AB0225DCB290088E3A4 /* Build configuration list for PBXNativeTarget "iValtTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D5C4AB1225DCB290088E3A4 /* Debug */,
+				4D5C4AB2225DCB290088E3A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D5C4AB3225DCB290088E3A4 /* Build configuration list for PBXNativeTarget "iValtUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D5C4AB4225DCB290088E3A4 /* Debug */,
+				4D5C4AB5225DCB290088E3A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4D5C4A7D225DCB210088E3A4 /* Project object */;
+}

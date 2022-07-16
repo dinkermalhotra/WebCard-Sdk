@@ -1,0 +1,6 @@
+framework module Pods_iValt_iValtUITests {
+  umbrella header "Pods-iValt-iValtUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
