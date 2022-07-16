@@ -118,22 +118,29 @@ class WSManager {
     }
     
     // MARK: REGISTER USER DETAILS
-    class func wsCallRegisterUserDetails(_ requestParams: [String: AnyObject], completion:@escaping (_ isSuccess: Bool, _ message: String, _ userDetails: [[String: AnyObject]])->()) {
+    class func wsCallRegisterUserDetails(_ requestParams: [String: AnyObject], completion:@escaping (_ isSuccess: Bool, _ message: String, _ userDetails: [String: AnyObject])->()) {
         Alamofire.request(WebService.registeredUserDetail, method: .post, parameters: requestParams, encoding: JSONEncoding.default, headers: header).responseJSON(completionHandler: {(responseData) -> Void in
             print(responseData.result)
             if let responseValue = responseData.result.value as? [String: AnyObject] {
                 print(responseValue)
-                if responseValue[WSResponseParams.WS_RESP_PARAM_STATUS] as? String == WSResponseParams.WS_RESP_PARAM_SUCCESS {
-                    if let userDetails = responseValue[WSResponseParams.WS_RESP_PARAM_USER_DETAILS] as? [[String: AnyObject]] {
-                        completion(true, "", userDetails)
-                    }
-                } else {
-                    if let responseMessage = responseValue[WSResponseParams.WS_RESP_PARAM_MESSAGE] as? String {
-                        completion(false, responseMessage, [])
+                if let error = responseValue[WSResponseParams.WS_RESP_PARAM_ERROR] as? [String: AnyObject] {
+                    completion(false, error[WSResponseParams.WS_RESP_PARAM_DETAIL] as? String ?? "", [:])
+                }
+                else {
+                    if let data = responseValue[WSResponseParams.WS_RESP_PARAM_DATA] as? [String: AnyObject] {
+                        if let status = data[WSResponseParams.WS_RESP_PARAM_STATUS] as? Bool {
+                            if status {
+                                if let details = data[WSResponseParams.WS_RESP_PARAM_DETAILS] as? [String: AnyObject] {
+                                    if let userDetails = details[WSResponseParams.WS_RESP_PARAM_USER] as? [String: AnyObject] {
+                                        completion(true, "", userDetails)
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             } else {
-                completion(false, "No parameters found", [])
+                completion(false, "No parameters found", [:])
             }
         })
     }
@@ -154,11 +161,19 @@ class WSManager {
             print(responseData.result)
             if let responseValue = responseData.result.value as? [String: AnyObject] {
                 print(responseValue)
-                if responseValue[WSResponseParams.WS_RESP_PARAM_STATUS] as? String == WSResponseParams.WS_RESP_PARAM_SUCCESS {
-                    completion(true, responseValue[WSResponseParams.WS_RESP_PARAM_MESSAGE] as? String ?? "")
-                } else {
-                    if let responseMessage = responseValue[WSResponseParams.WS_RESP_PARAM_MESSAGE] as? String {
-                        completion(false, responseMessage)
+                if responseValue[WSResponseParams.WS_RESP_PARAM_ERROR] is [String: AnyObject] {
+                    completion(false, "")
+                }
+                else {
+                    if let data = responseValue[WSResponseParams.WS_RESP_PARAM_DATA] as? [String: AnyObject] {
+                        if let status = data[WSResponseParams.WS_RESP_PARAM_STATUS] as? Bool {
+                            if status {
+                                completion(true, "")
+                            }
+                            else {
+                                completion(false, "")
+                            }
+                        }
                     }
                 }
             } else {
@@ -168,22 +183,29 @@ class WSManager {
     }
     
     // MARK: CHECK BIOMETRIC STATUS
-    class func wsCallCheckBiometricStatus(_ requestParams: [String: AnyObject], completion:@escaping (_ isSuccess: Bool, _ message: String, _ userDetails: [[String: AnyObject]])->()) {
+    class func wsCallCheckBiometricStatus(_ requestParams: [String: AnyObject], completion:@escaping (_ isSuccess: Bool, _ message: String, _ userDetails: [String: AnyObject])->()) {
         Alamofire.request(WebService.checkStatus, method: .post, parameters: requestParams, encoding: JSONEncoding.default, headers: header).responseJSON(completionHandler: {(responseData) -> Void in
             print(responseData.result)
             if let responseValue = responseData.result.value as? [String: AnyObject] {
                 print(responseValue)
-                if responseValue[WSResponseParams.WS_RESP_PARAM_STATUS] as? String == WSResponseParams.WS_RESP_PARAM_SUCCESS {
-                    if let userDetails = responseValue[WSResponseParams.WS_RESP_PARAM_USER_DETAILS] as? [[String: AnyObject]] {
-                        completion(true, "", userDetails)
-                    }
-                } else {
-                    if let responseMessage = responseValue[WSResponseParams.WS_RESP_PARAM_MESSAGE] as? String {
-                        completion(false, responseMessage, [])
+                if let error = responseValue[WSResponseParams.WS_RESP_PARAM_ERROR] as? [String: AnyObject] {
+                    completion(false, error[WSResponseParams.WS_RESP_PARAM_DETAIL] as? String ?? "", [:])
+                }
+                else {
+                    if let data = responseValue[WSResponseParams.WS_RESP_PARAM_DATA] as? [String: AnyObject] {
+                        if let status = data[WSResponseParams.WS_RESP_PARAM_STATUS] as? Bool {
+                            if status {
+                                if let details = data[WSResponseParams.WS_RESP_PARAM_DETAILS] as? [String: AnyObject] {
+                                    if let userDetails = details[WSResponseParams.WS_RESP_PARAM_USER] as? [String: AnyObject] {
+                                        completion(true, "", userDetails)
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             } else {
-                completion(false, "No parameters found", [])
+                completion(false, "No parameters found", [:])
             }
         })
     }

@@ -9,7 +9,6 @@ class iValtMainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        setEnrollment()
         faceAuthentication()
     }
     

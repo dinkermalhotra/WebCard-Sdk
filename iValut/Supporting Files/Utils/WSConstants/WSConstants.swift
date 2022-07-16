@@ -45,5 +45,6 @@ struct WSResponseParams {
     static let WS_RESP_PARAM_DETAILS                 = "details"
     static let WS_RESP_PARAM_CREATED_AT              = "created_at"
     static let WS_RESP_PARAM_IS_ENROLLED             = "is_enrolled"
+    static let WS_RESP_PARAM_USER                    = "user"
     static let WS_RESP_PARAM_USER_DETAILS            = "userDetails"
 }

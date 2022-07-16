@@ -4,7 +4,7 @@ import LocalAuthentication
 
 protocol iValtLoginViewControllerDelegate: class
 {
-    func onSuccess(_ message: String, _ userDetails: [[String: AnyObject]])
+    func onSuccess(_ message: String, _ userDetails: [String: AnyObject])
     func didFailWithError(_ message: String)
 }
 
@@ -66,7 +66,7 @@ extension iValtLoginViewController {
         let params: [String: AnyObject] = [WSRequestParams.WS_REQS_PARAM_IMEI: deviceId as AnyObject]
         WSManager.wsCallRegisterUserDetails(params) { (isSuccess, message, userDetails) in
             if isSuccess {
-                if userDetails.count > 0, let mobile = userDetails[0][WSRequestParams.WS_REQS_PARAM_MOBILE] as? String {
+                if let mobile = userDetails[WSRequestParams.WS_REQS_PARAM_MOBILE] as? String {
                     self.updateToken(mobile, deviceId)
                 }
                 

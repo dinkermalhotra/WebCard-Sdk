@@ -1,7 +1,7 @@
 import Foundation
 
 class CheckBiometricStatus: NSObject {
-    @objc static func checkStatus(_ supplierId: String, completion:@escaping (_ isSuccess: Bool, _ message: String, _ userDetails: [[String: AnyObject]])->()) {
+    @objc static func checkStatus(_ supplierId: String, completion:@escaping (_ isSuccess: Bool, _ message: String, _ userDetails: [String: AnyObject])->()) {
         do {
             let deviceId = try KeychainWrapper.init().getDeviceId()
             

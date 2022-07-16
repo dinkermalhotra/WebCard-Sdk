@@ -38,9 +38,9 @@ class iValtRegistrationViewController: UIViewController {
     var isSelected = false
     var name = ""
     var email = ""
-    var supplierId = "1234567890123456"
-    var supplier = "WebCard"
-    var deviceToken = "1234567890"
+    var supplierId = ""
+    var supplier = ""
+    var deviceToken = ""
     var countries = [Country]()
     weak var delegate: iValtRegistrationViewControllerDelegate?
     
