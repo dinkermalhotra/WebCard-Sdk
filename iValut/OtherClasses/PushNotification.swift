@@ -63,7 +63,8 @@ class PushNotification: NSObject {
         if WSManager.isConnectedToInternet() {
             let params: [String: AnyObject] = [WSRequestParams.WS_REQS_PARAM_MOBILE: mobile as AnyObject,
                                                WSRequestParams.WS_REQS_PARAM_TOKEN: token as AnyObject,
-                                               WSRequestParams.WS_REQS_PARAM_DOMAIN: webSite as AnyObject]
+                                               WSRequestParams.WS_REQS_PARAM_DOMAIN: webSite as AnyObject,
+                                               WSRequestParams.WS_REQS_PARAM_COUNTRY_CODE: Helper.getPREF(UserDefaultsConstants.PREF_COUNTRY_CODE) as AnyObject]
             WSManager.wsCallRegisterConfirmation(params, completion: { (isSuccess, message) in
                 if isSuccess {
                     
@@ -77,8 +78,9 @@ class PushNotification: NSObject {
     @objc private static func loginUser(_ mobile: String, _ token: String, _ webSite: String) {
         if WSManager.isConnectedToInternet() {
             let params: [String: AnyObject] = [WSRequestParams.WS_REQS_PARAM_MOBILE: mobile as AnyObject,
-                                                WSRequestParams.WS_REQS_PARAM_TOKEN: token as AnyObject,
-                                                WSRequestParams.WS_REQS_PARAM_DOMAIN: webSite as AnyObject]
+                                               WSRequestParams.WS_REQS_PARAM_TOKEN: token as AnyObject,
+                                               WSRequestParams.WS_REQS_PARAM_DOMAIN: webSite as AnyObject,
+                                               WSRequestParams.WS_REQS_PARAM_COUNTRY_CODE: Helper.getPREF(UserDefaultsConstants.PREF_COUNTRY_CODE) as AnyObject]
             WSManager.wsCallLoginConfirmation(params, completion: { (isSuccess, message) in
                 if isSuccess {
                     
