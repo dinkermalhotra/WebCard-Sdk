@@ -16,10 +16,10 @@
 		18AB64E3226F4C5B00827E1B /* WSConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AB64E2226F4C5B00827E1B /* WSConstants.swift */; };
 		18AB64E5226F4C6900827E1B /* WSManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AB64E4226F4C6900827E1B /* WSManager.swift */; };
 		190AEA6E234489EA003363DD /* UIButton + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190AEA6D234489EA003363DD /* UIButton + Extension.swift */; };
-		190AEA7123448A4A003363DD /* UIView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190AEA7023448A4A003363DD /* UIView + Extension.swift */; };
 		1918D229234490530083112D /* AlertMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1918D228234490530083112D /* AlertMessages.swift */; };
 		19428D7D232E4D1100E6565C /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19428D7C232E4D1100E6565C /* Extension.swift */; };
 		196E2B2123CF41AA00F95D01 /* iValtRegistrationCompletedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196E2B2023CF41AA00F95D01 /* iValtRegistrationCompletedViewController.swift */; };
+		197961BB288B93FD002D5FE7 /* UIView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197961BA288B93FD002D5FE7 /* UIView + Extension.swift */; };
 		1982580024211384009499F6 /* iValtMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198257FF24211384009499F6 /* iValtMainViewController.swift */; };
 		1988BEEF26562C35006065CC /* PushNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1988BEEE26562C35006065CC /* PushNotification.swift */; };
 		1988FB78266632220041893C /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1988FB77266632220041893C /* KeychainWrapper.swift */; };
@@ -80,10 +80,10 @@
 		18AB64E2226F4C5B00827E1B /* WSConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WSConstants.swift; sourceTree = "<group>"; };
 		18AB64E4226F4C6900827E1B /* WSManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WSManager.swift; sourceTree = "<group>"; };
 		190AEA6D234489EA003363DD /* UIButton + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton + Extension.swift"; sourceTree = "<group>"; };
-		190AEA7023448A4A003363DD /* UIView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "\U0010UIView + Extension.swift"; sourceTree = "<group>"; };
 		1918D228234490530083112D /* AlertMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertMessages.swift; sourceTree = "<group>"; };
 		19428D7C232E4D1100E6565C /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		196E2B2023CF41AA00F95D01 /* iValtRegistrationCompletedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iValtRegistrationCompletedViewController.swift; sourceTree = "<group>"; };
+		197961BA288B93FD002D5FE7 /* UIView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Extension.swift"; sourceTree = "<group>"; };
 		198257FF24211384009499F6 /* iValtMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iValtMainViewController.swift; sourceTree = "<group>"; };
 		1988BEEE26562C35006065CC /* PushNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotification.swift; sourceTree = "<group>"; };
 		1988FB77266632220041893C /* KeychainWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainWrapper.swift; sourceTree = "<group>"; };
@@ -205,11 +205,11 @@
 				19428D7C232E4D1100E6565C /* Extension.swift */,
 				18AB64DA226F4B9D00827E1B /* Helper.swift */,
 				190AEA6D234489EA003363DD /* UIButton + Extension.swift */,
-				190AEA7023448A4A003363DD /* UIView + Extension.swift */,
 				18AB64DD226F4BE800827E1B /* UserDefaultsConstants.swift */,
 				18AB64D7226F4AD800827E1B /* ViewControllerHelper.swift */,
 				1988BEEE26562C35006065CC /* PushNotification.swift */,
 				1988FB77266632220041893C /* KeychainWrapper.swift */,
+				197961BA288B93FD002D5FE7 /* UIView + Extension.swift */,
 			);
 			path = OtherClasses;
 			sourceTree = "<group>";
@@ -575,6 +575,7 @@
 				18AB64E5226F4C6900827E1B /* WSManager.swift in Sources */,
 				18AB64D8226F4AD800827E1B /* ViewControllerHelper.swift in Sources */,
 				190AEA6E234489EA003363DD /* UIButton + Extension.swift in Sources */,
+				197961BB288B93FD002D5FE7 /* UIView + Extension.swift in Sources */,
 				18AB6481226F42CE00827E1B /* iValtOtpViewController.swift in Sources */,
 				199702602699CDE800190C9B /* CheckBiometricStatus.swift in Sources */,
 				1988FB78266632220041893C /* KeychainWrapper.swift in Sources */,
@@ -583,7 +584,6 @@
 				4D5C4A89225DCB210088E3A4 /* AppDelegate.swift in Sources */,
 				18AB64E3226F4C5B00827E1B /* WSConstants.swift in Sources */,
 				198BA1702633DBB600BDDA0A /* iValtLoginViewController.swift in Sources */,
-				190AEA7123448A4A003363DD /* UIView + Extension.swift in Sources */,
 				1988BEEF26562C35006065CC /* PushNotification.swift in Sources */,
 				1982580024211384009499F6 /* iValtMainViewController.swift in Sources */,
 				18AB64DB226F4B9D00827E1B /* Helper.swift in Sources */,
