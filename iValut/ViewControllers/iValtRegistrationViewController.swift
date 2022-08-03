@@ -312,7 +312,7 @@ extension iValtRegistrationViewController {
                         vc.deviceToken = self.deviceToken
                         Helper.setPREF(self.txtEmail.text ?? "", key: UserDefaultsConstants.PREF_EMAIL)
                         Helper.setPREF(userNumber, key: UserDefaultsConstants.PREF_MOBILE_NUMBER)
-                        Helper.setPREF(self.txtPhone.text ?? "", key: UserDefaultsConstants.PREF_MOBILE)
+                        Helper.setPREF(self.txtPhone.text?.replacingOccurrences(of: self.countryCode, with: "") ?? "", key: UserDefaultsConstants.PREF_MOBILE)
                         Helper.setPREF(self.txtName.text ?? "", key: UserDefaultsConstants.PREF_NAME)
                         Helper.setPREF(self.countryCode, key: UserDefaultsConstants.PREF_COUNTRY_CODE)
                         self.navigationController?.pushViewController(vc, animated: true)
