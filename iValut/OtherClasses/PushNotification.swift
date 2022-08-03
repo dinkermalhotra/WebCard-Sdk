@@ -48,7 +48,7 @@ class PushNotification: NSObject {
     
     @objc private static func globalUser(_ mobile: String, _ value: Bool) {
         if WSManager.isConnectedToInternet() {
-            let params: [String: AnyObject] = [WSRequestParams.WS_REQS_PARAM_MOBILE: mobile as AnyObject,
+            let params: [String: AnyObject] = [WSRequestParams.WS_REQS_PARAM_MOBILE: Helper.getPREF(UserDefaultsConstants.PREF_MOBILE) as AnyObject,
                                                WSResponseParams.WS_RESP_PARAM_STATUS: value as AnyObject,
                                                WSRequestParams.WS_REQS_PARAM_COUNTRY_CODE: Helper.getPREF(UserDefaultsConstants.PREF_COUNTRY_CODE) as AnyObject]
             WSManager.wsCallGlobalAuthentication(params, completion: { (isSuccess, message) in
