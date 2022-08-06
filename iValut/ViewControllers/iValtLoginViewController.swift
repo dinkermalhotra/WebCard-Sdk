@@ -66,7 +66,10 @@ extension iValtLoginViewController {
         let params: [String: AnyObject] = [WSRequestParams.WS_REQS_PARAM_IMEI: deviceId as AnyObject]
         WSManager.wsCallRegisterUserDetails(params) { (isSuccess, message, userDetails) in
             if isSuccess {
-                if let mobile = userDetails[WSRequestParams.WS_REQS_PARAM_MOBILE] as? String {
+                if let mobile = userDetails[WSRequestParams.WS_REQS_PARAM_MOBILE] as? String, let countryCode = userDetails[WSRequestParams.WS_REQS_PARAM_COUNTRY_CODE] as? String {
+                    Helper.setPREF(mobile, key: UserDefaultsConstants.PREF_MOBILE)
+                    Helper.setPREF(countryCode, key: UserDefaultsConstants.PREF_COUNTRY_CODE)
+                    
                     self.updateToken(mobile, deviceId)
                 }
                 
