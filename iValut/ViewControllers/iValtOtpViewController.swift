@@ -76,12 +76,7 @@ class iValtOtpViewController: UIViewController {
 // MARK: - UIBUTTON ACTIONS
 extension iValtOtpViewController {
     @IBAction func backClicked(_ sender: UIButton) {
-        if self.presentingViewController != nil {
-            self.dismiss(animated: true, completion: nil)
-        }
-        else {
-            self.navigationController?.popViewController(animated: true)
-        }
+        self.navigationController?.popViewController(animated: true)
     }
     
     @IBAction func resendCodeClicked(_ sender: UIButton) {
